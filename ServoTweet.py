@@ -7,12 +7,14 @@ import json
 import time
 import RPi.GPIO as GPIO
 
-SearchTag = 'atria'
+SearchTag = 'atria' # Tweet to be searched in twitter API 
 PlaceType = 'poi'
-PlaceName = 'Atria'
+PlaceName = 'Atria' # Place where you have to search for tweets
 
-LED = 21
-ServoPin = 12
+#Connections
+
+LED = 21 #Connection for led
+ServoPin = 12 #Connection for servo motor
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(LED, GPIO.OUT)
